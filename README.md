@@ -6,9 +6,7 @@ A full-stack platform to create AI agents, connect them into multi-agent workflo
 
 ## 🎥 Demo
 
-[![AI Agent Orchestration Platform Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> 📺 **[Watch Full Demo on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)** — End-to-end walkthrough: creating agents, running a 3-agent Research & Report workflow, and live Telegram bot interaction.
+![AI Agent Orchestration Platform Demo](./assets/demo.gif)
 
 **Demo covers:**
 - ✅ Visual workflow builder with ReactFlow
