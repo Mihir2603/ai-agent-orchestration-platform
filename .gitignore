@@ -1,0 +1,55 @@
+# ── Python ─────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ── Environment / Secrets ───────────────────────────────────────
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# ── Database ────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+backend/data/
+
+# ── Node / Frontend ─────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+
+# ── OS ──────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Misc ────────────────────────────────────────────────────────
+/tmp/
+nohup.out
+*.pid

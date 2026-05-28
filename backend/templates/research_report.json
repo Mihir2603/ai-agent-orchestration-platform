@@ -1,0 +1,56 @@
+{
+  "name": "Research & Report",
+  "description": "Three-agent pipeline: a Researcher gathers web information, an Analyst synthesizes findings, and a Writer produces a polished report.",
+  "template_type": "research_report",
+  "max_iterations": 25,
+  "timeout_seconds": 300,
+  "graph": {
+    "entryNode": "researcher",
+    "nodes": [
+      {
+        "id": "researcher",
+        "type": "agentNode",
+        "position": { "x": 100, "y": 200 },
+        "data": {
+          "agentId": "__template__",
+          "label": "Researcher",
+          "role": "Research Agent",
+          "description": "Searches the web and gathers relevant information",
+          "color": "#6366f1",
+          "templateRole": "researcher"
+        }
+      },
+      {
+        "id": "analyst",
+        "type": "agentNode",
+        "position": { "x": 400, "y": 200 },
+        "data": {
+          "agentId": "__template__",
+          "label": "Analyst",
+          "role": "Analysis Agent",
+          "description": "Analyses and synthesizes the gathered information",
+          "color": "#8b5cf6",
+          "templateRole": "analyst"
+        }
+      },
+      {
+        "id": "writer",
+        "type": "agentNode",
+        "position": { "x": 700, "y": 200 },
+        "data": {
+          "agentId": "__template__",
+          "label": "Writer",
+          "role": "Writing Agent",
+          "description": "Produces a well-structured, polished final report",
+          "color": "#06b6d4",
+          "templateRole": "writer"
+        }
+      }
+    ],
+    "edges": [
+      { "id": "e1", "source": "researcher", "target": "analyst", "data": {} },
+      { "id": "e2", "source": "analyst",    "target": "writer",   "data": {} }
+    ],
+    "viewport": { "x": 0, "y": 0, "zoom": 1 }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Customer Support Pipeline",
+  "description": "Incoming requests are classified by a Triage agent, then routed to either a Support Agent (simple issues) or an Escalation Agent (complex/urgent issues).",
+  "template_type": "customer_support",
+  "max_iterations": 20,
+  "timeout_seconds": 180,
+  "graph": {
+    "entryNode": "triage",
+    "nodes": [
+      {
+        "id": "triage",
+        "type": "agentNode",
+        "position": { "x": 100, "y": 200 },
+        "data": {
+          "agentId": "__template__",
+          "label": "Triage",
+          "role": "Triage Agent",
+          "description": "Classifies incoming requests as 'simple' or 'complex'",
+          "color": "#f59e0b",
+          "templateRole": "triage"
+        }
+      },
+      {
+        "id": "support",
+        "type": "agentNode",
+        "position": { "x": 400, "y": 100 },
+        "data": {
+          "agentId": "__template__",
+          "label": "Support Agent",
+          "role": "Support Agent",
+          "description": "Handles routine support requests",
+          "color": "#10b981",
+          "templateRole": "support"
+        }
+      },
+      {
+        "id": "escalation",
+        "type": "agentNode",
+        "position": { "x": 400, "y": 300 },
+        "data": {
+          "agentId": "__template__",
+          "label": "Escalation Agent",
+          "role": "Senior Support Agent",
+          "description": "Handles complex or urgent issues",
+          "color": "#ef4444",
+          "templateRole": "escalation"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "triage",
+        "target": "support",
+        "data": { "condition": "simple", "label": "Simple" }
+      },
+      {
+        "id": "e2",
+        "source": "triage",
+        "target": "escalation",
+        "data": { "condition": "complex", "label": "Complex" }
+      }
+    ],
+    "viewport": { "x": 0, "y": 0, "zoom": 1 }
+  }
+}

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-slate-700;
+  }
+  body {
+    @apply bg-surface-950 text-slate-100;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track { @apply bg-surface-900; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-600 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-500; }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface-800 rounded-xl border border-slate-700/50 shadow-lg;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500
+           text-white text-sm font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600
+           text-slate-100 text-sm font-medium rounded-lg transition-colors;
+  }
+  .btn-danger {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-red-600/20 hover:bg-red-600/30
+           text-red-400 text-sm font-medium rounded-lg transition-colors border border-red-600/30;
+  }
+  .input {
+    @apply w-full bg-surface-900 border border-slate-600 rounded-lg px-3 py-2 text-sm
+           text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2
+           focus:ring-indigo-500 focus:border-transparent transition-all;
+  }
+  .label {
+    @apply block text-xs font-medium text-slate-400 mb-1.5;
+  }
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-green { @apply badge bg-emerald-500/20 text-emerald-400; }
+  .badge-yellow { @apply badge bg-amber-500/20 text-amber-400; }
+  .badge-red { @apply badge bg-red-500/20 text-red-400; }
+  .badge-blue { @apply badge bg-blue-500/20 text-blue-400; }
+  .badge-gray { @apply badge bg-slate-500/20 text-slate-400; }
+}
+
+/* ReactFlow overrides */
+.react-flow__background { background-color: #020617 !important; }
+.react-flow__node { font-family: 'Inter', sans-serif; }
+.react-flow__edge-path { stroke: #6366f1 !important; stroke-width: 2 !important; }
+.react-flow__handle {
+  @apply !bg-indigo-500 !border-2 !border-surface-900 !w-3 !h-3;
+}
+.react-flow__controls button {
+  @apply !bg-surface-800 !border-slate-700 !text-slate-300;
+}
+.react-flow__minimap {
+  @apply !bg-surface-900 !border-slate-700 !rounded-lg !overflow-hidden;
+}
