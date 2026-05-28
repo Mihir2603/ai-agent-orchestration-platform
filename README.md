@@ -4,18 +4,34 @@ A full-stack platform to create AI agents, connect them into multi-agent workflo
 
 ---
 
+## 🎥 Demo
+
+[![AI Agent Orchestration Platform Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
+> 📺 **[Watch Full Demo on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)** — End-to-end walkthrough: creating agents, running a 3-agent Research & Report workflow, and live Telegram bot interaction.
+
+**Demo covers:**
+- ✅ Visual workflow builder with ReactFlow
+- ✅ 3-agent Research & Report pipeline running live
+- ✅ Real-time execution monitor with step-by-step logs
+- ✅ Telegram bot (`@mihir_263_bot`) answering questions live
+- ✅ Agent configuration (model, tools, memory, guardrails)
+
+---
+
 ## 📋 Table of Contents
 
-1. [Quick Start](#quick-start)
-2. [Architecture](#architecture)
-3. [API Keys Setup](#api-keys-setup)
-4. [Feature Guide](#feature-guide)
-5. [Pre-built Workflows](#pre-built-workflows)
-6. [Telegram Bot](#telegram-bot)
-7. [Running Tests](#running-tests)
-8. [Project Structure](#project-structure)
-9. [Adding New Workflows / Channels](#extending-the-platform)
-10. [Troubleshooting](#troubleshooting)
+1. [Demo](#demo)
+2. [Quick Start](#quick-start)
+3. [Architecture](#architecture)
+4. [API Keys Setup](#api-keys-setup)
+5. [Feature Guide](#feature-guide)
+6. [Pre-built Workflows](#pre-built-workflows)
+7. [Telegram Bot](#telegram-bot)
+8. [Running Tests](#running-tests)
+9. [Project Structure](#project-structure)
+10. [Adding New Workflows / Channels](#extending-the-platform)
+11. [Troubleshooting](#troubleshooting)
 
 ---
 
